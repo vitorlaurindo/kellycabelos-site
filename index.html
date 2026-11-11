@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="pt-BR" data-type="service" data-radius="soft" data-buttons="arrow" data-motion>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KELLY: head spa e terapia capilar em Guariba, SP</title>
+<meta name="description" content="Ritual de head spa com análise do couro cabeludo, esfoliação, limpeza profunda e massagem com água morna em lavatório-maca. Atendimento com hora marcada em Guariba.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="KELLY Terapia Capilar &amp; Head Spa">
+<meta property="og:title" content="KELLY: head spa e terapia capilar em Guariba, SP">
+<meta property="og:description" content="Análise do couro cabeludo, esfoliação, limpeza profunda e massagem com água morna, deitada em um lavatório-maca.">
+<meta property="og:image" content="https://kellycabelos.com.br/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#f1e7d5">
+<!-- domínio: kellycabelos.com.br; a loja (Vitrinis) fica em /vitrine/, que leva a www.vitrinis.com.br/v/kellycabelos -->
+<link rel="canonical" href="https://kellycabelos.com.br/">
+<meta property="og:url" content="https://kellycabelos.com.br/">
+<meta name="site-kind" content="other">
+<meta name="page-type" content="service">
+<meta name="geo.region" content="BR-SP">
+<meta name="geo.placename" content="Guariba">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Jost:wght@400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<link rel="stylesheet" href="assets/icons/icon.css">
+<style>
+/* Paleta e tipografia oficiais (Guia de Marca KELLY v1.1): Verde Profundo #173B35, Dourado #C6A36D,
+   Off-White #F1E7D5; GFS Didot nos títulos, Jost no texto. Bloco gerado por start.mjs brand, com a
+   Didot da marca no lugar da serifada sorteada. */
+:root {
+  --p-bg: #f1e7d5; --p-surface: #e9dcc4; --p-ink: #173b35; --p-muted: #4b6259;
+  --p-accent: #173b35; --p-accent-ink: #f1e7d5; --p-action: #173b35; --p-action-ink: #f1e7d5;
+  --p-inv-bg: #173b35; --p-inv-surface: #26463f; --p-inv-ink: #f1e7d5; --p-inv-muted: #c8c3b0;
+  --p-inv-accent: #c6a36d; --p-inv-accent-ink: #173b35; --p-inv-action: #f1e7d5; --p-inv-action-ink: #173b35;
+  --font-display: "GFS Didot", "Didot", Georgia, serif;
+  --font-text: "Jost", system-ui, sans-serif;
+  --display-weight: 400;
+  --display-tracking: -0.012em;
+  --display-tracking-xl: -0.018em;
+  --ly-scale: 1;
+}
+</style>
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+<link rel="modulepreload" href="assets/moments/moments.js">
+<link rel="modulepreload" href="assets/moments/lib.js">
+<link rel="modulepreload" href="assets/moments/pinned-chapters/moment.js">
+<link rel="modulepreload" href="assets/moments/picture-develops/moment.js">
+<style>
+/* the brand logo in the bar and the footer: the client's own curves (Entregas/Bordado_SVG), never typed */
+.nav__logo .k-logo { display: block; width: 136px; height: 34px; color: var(--ink); }
+.closing .k-logo-v { display: block; width: 168px; height: auto; color: var(--ink); }
+/* the hero's symbol: the two strands come down once on load (the entrance), then rest */
+.hero__symbol path { clip-path: inset(0 0 100% 0); animation: k-strand 1.6s cubic-bezier(.22,.61,.36,1) .15s forwards; }
+.hero__symbol path + path { animation-delay: .45s; }
+@keyframes k-strand { to { clip-path: inset(0 0 0 0); } }
+@media (prefers-reduced-motion: reduce) { .hero__symbol path { animation: none; clip-path: none; } }
+/* picture-develops: the lavatório on its own paper, on the split's right column */
+.develop { margin: 0; border-radius: var(--r-lg); overflow: hidden; height: min(660px, var(--ly-fit)); background: #f1e7d5; }
+figure.develop > img { display: block; width: 100%; height: 100%; object-fit: contain; padding: var(--s-6); box-sizing: border-box; }
+@media (max-width: 1023px) { .develop { height: auto; aspect-ratio: 4 / 3; margin-top: var(--s-7); } }
+.rows .rows__name small { display: block; font-weight: 400; color: var(--muted); font-size: var(--t-body); }
+/* the film of the space: the client's walkthrough, 2.23:1 */
+#espaco .film { margin: 0; }
+#espaco .film > video { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; background: var(--surface); }
+/* the booking photograph beside the form */
+.book__photo { position: relative; overflow: hidden; border-radius: var(--r-lg); height: min(600px, var(--ly-fit)); }
+.close__media > picture > img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: var(--pos, 50% 50%); }
+/* the Kelly section: portrait beside the words; seals in the brand's gold line */
+.kelly__photo { position: relative; overflow: hidden; border-radius: var(--r-lg); height: min(660px, var(--ly-fit)); }
+.kelly__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
+@media (max-width: 1023px) { .kelly__photo { height: auto; aspect-ratio: 4 / 5; margin-top: var(--s-7); } }
+.kelly__label { margin: var(--s-8) 0 var(--s-5); color: var(--muted); font-family: var(--font-text); font-weight: 500; }
+.seals { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 124px); gap: var(--s-5); }
+.seal { width: 124px; height: 124px; color: #8a6c3c; transition: transform 200ms cubic-bezier(.23,1,.32,1); }
+.seal svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.seal text { fill: currentColor; font-family: var(--font-text); font-weight: 500; letter-spacing: .14em; }
+.seal__name { font-size: 10px; letter-spacing: .1em; }
+.seal__foot { font-size: 6.4px; letter-spacing: .3em; }
+@media (hover: hover) and (pointer: fine) { .seal:hover { transform: translateY(-2px); } }
+@media (max-width: 1279px) { .seals { grid-template-columns: repeat(4, 96px); gap: var(--s-4); } .seal { width: 96px; height: 96px; } }
+@media (max-width: 639px) { .seals { grid-template-columns: repeat(2, 120px); gap: var(--s-4); } .seal { width: 120px; height: 120px; } }
+@media (prefers-reduced-motion: reduce) { .seal { transition: none; } }
+.book__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+@media (max-width: 1023px) { .book__photo { height: auto; aspect-ratio: 4 / 3; margin-top: var(--s-7); } }
+.nav__actions { gap: var(--s-5); }
+@media (min-width: 640px) and (max-width: 1099px) { .nav__actions > .nav__link { display: none; } }
+.socials { display: flex; gap: var(--s-2); }
+.socials a { display: grid; place-items: center; width: 44px; height: 44px; color: var(--ink); border-radius: var(--r-sm); }
+.field select { width: 100%; height: 48px; padding: 0 var(--s-4); font: 400 16px/1 var(--font-text); color: var(--ink); background: var(--bg); border: 1px solid var(--line-strong, color-mix(in oklab, var(--ink) 30%, transparent)); border-radius: var(--r-sm); }
+.step-n { font-variant-numeric: tabular-nums; color: var(--muted); margin-right: var(--s-2); }
+/* hero: the water arch over the whole first screen, from the top edge under the nav; the client's words centred.
+   The film is toned down with a deep-green shade (strongest behind the words and under the nav, lighter at the
+   edges), measured on every frame: off-white text >= 4.5:1 at the worst spot. */
+.hero--centre { color: #f1e7d5; background: #0e2622; }
+.hero--centre > .hero__bg { inset: 0; top: 0; height: 100%; z-index: 0; object-fit: cover; object-position: var(--ly-pos, 50% 45%); }
+.hero--centre::after { content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    linear-gradient(180deg, rgb(10 28 25 / .62) 0, rgb(10 28 25 / 0) 180px),
+    radial-gradient(70% 62% at 50% 52%, rgb(10 28 25 / .64) 0%, rgb(10 28 25 / .5) 55%, rgb(10 28 25 / .34) 100%); }
+.hero--centre > .wrap { position: relative; z-index: 1; height: 100%; }
+.hero--centre .hero-text { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.hero--centre .hero__text { width: min(860px, 100%); margin: 0 auto; padding: 0; background: none; color: #f1e7d5;
+  --ink: #f1e7d5; --muted: #e2dccb; --line: rgb(241 231 213 / .35); --line-strong: rgb(241 231 213 / .7); }
+.hero--centre .hero__text > * + * { margin-top: var(--s-6); }
+.hero--centre h1 { max-width: none; color: #f1e7d5; font-size: clamp(40px, 6vw, 84px); line-height: 1.04; letter-spacing: -0.015em; text-wrap: balance;
+  text-shadow: 0 2px 24px rgb(6 20 18 / .35); }
+.hero--centre h1 .nw { white-space: nowrap; }
+.hero--centre .hero__lead { max-width: 46ch; margin-inline: auto; color: #f1e7d5; font-size: clamp(17px, 1.45vw, 21px); line-height: 1.55; text-shadow: 0 1px 14px rgb(6 20 18 / .45); }
+.hero--centre .btn-row { justify-content: center; --ink: #f1e7d5; --bg: #173b35; --action: #f1e7d5; --action-ink: #173b35; --line-strong: rgb(241 231 213 / .6); }
+.hero--centre .btn--secondary { color: #f1e7d5; }
+.hero__symbol { display: block; width: 22px; height: 54px; margin: 0 auto; color: #c6a36d; }
+/* every width: the film fills the screen (the kit stacks a photo hero under 1024; not this one) */
+@media (max-width: 1023px) {
+  main > .hero.hero--centre { --photo: 0px; }
+  .hero--centre, .hero--centre[data-tone] { background: #0e2622; color: #f1e7d5; --ink: #f1e7d5; --muted: #e2dccb; }
+  .hero--centre > .hero__bg { top: 0; height: 100%; object-position: var(--ly-pos-phone, var(--ly-pos, 50% 45%)); }
+  .hero--centre > .wrap > .hero-text, .hero--centre[data-calm] > .wrap > .hero-text { justify-content: center; }
+  .hero--centre .hero__text { padding: 0; background: none; }
+  html:is([data-buttons="arrow"], [data-buttons="block"]) .hero--centre[data-tone="dark"] .btn--secondary { color: #f1e7d5; text-decoration-color: rgb(241 231 213 / .6); }
+}
+.hero__pause { position: absolute; z-index: 3; bottom: calc(var(--s-5) - var(--hpadb) - var(--bar, 0px)); right: 0; display: grid; place-items: center; width: 44px; height: 44px;
+  border: 1px solid rgb(241 231 213 / .35); border-radius: 50%; background: rgb(14 38 34 / .55); color: #f1e7d5; cursor: pointer;
+  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); transition: transform 160ms cubic-bezier(.23,1,.32,1); }
+.hero__pause:active { transform: scale(.94); }
+.hero__pause .i-play, .hero__pause.is-paused .i-pause { display: none; }
+.hero__pause.is-paused .i-play { display: block; }
+/* the nav over the film: transparent, off-white mark and words; solid again once the hero is gone or the menu opens */
+.nav { transition: background-color 240ms ease, border-color 240ms ease, color 240ms ease; }
+html.nav-over .nav:not(.is-open) { background: transparent; border-bottom-color: transparent; box-shadow: none; color: #f1e7d5;
+  --ink: #f1e7d5; --line: rgb(241 231 213 / .3); --line-strong: rgb(241 231 213 / .6); --action: #f1e7d5; --action-ink: #173b35; }
+html.nav-over .nav:not(.is-open) .nav__logo .k-logo, html.nav-over .nav:not(.is-open) .nav__link, html.nav-over .nav:not(.is-open) .nav__toggle { color: #f1e7d5; }
+html.nav-over .nav:not(.is-open) .nav__toggle { background: transparent; border-color: rgb(241 231 213 / .5); }
+html.nav-over .nav:not(.is-open) .nav__item:hover .nav__menu, html.nav-over .nav:not(.is-open) .nav__item:focus-within .nav__menu { color: var(--p-ink); --ink: var(--p-ink); }
+@media (prefers-reduced-motion: reduce) { .nav { transition: none; } }
+/* brand's principal pair (Guia 5): Dourado on Verde Profundo, 5.2:1 */
+.ground-inverse h2 { color: var(--p-inv-accent); }
+.ground-inverse ::selection { background: color-mix(in oklab, var(--p-inv-accent) 45%, transparent); color: var(--p-inv-ink); }
+::selection { background: color-mix(in oklab, #c6a36d 38%, transparent); color: var(--ink); }
+input, select, textarea { caret-color: var(--ink); accent-color: var(--ink); }
+p, .faq__item p, .rows p { text-wrap: pretty; }
+/* the film's play control: a disc and a label on a solid chip, never text on the photograph */
+#espaco .film { position: relative; }
+#espaco .film > picture { position: static; display: contents; }
+#espaco .film > picture > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%; }
+#espaco .film > .film__play { position: absolute; left: var(--s-6); bottom: var(--s-6); display: inline-flex; align-items: center; gap: var(--s-4);
+  padding: var(--s-2) var(--s-5) var(--s-2) var(--s-2); border: 0; border-radius: 999px; background: var(--bg); color: var(--ink);
+  font: 500 var(--t-body)/1.2 var(--font-text); cursor: pointer; transition: transform 160ms cubic-bezier(.23,1,.32,1), opacity 200ms ease-out; }
+.film__disc { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background: var(--ink); color: var(--bg); }
+.film__disc svg { margin-left: 2px; }
+.film__label small { display: block; font-weight: 400; font-size: var(--t-small); color: var(--muted); }
+.film__play:active { transform: scale(.97); }
+@media (hover: hover) and (pointer: fine) { .film__play:hover { transform: translateY(-2px); } }
+#espaco .film.is-playing .film__play { opacity: 0; pointer-events: none; }
+@media (prefers-reduced-motion: reduce) { .film__play { transition: none; } }
+/* the FAQ's photograph fills what the heading leaves in the left column */
+.faq__side { display: flex; flex-direction: column; align-self: stretch; }
+.faq__photo { position: relative; flex: 1 1 auto; min-height: 240px; margin-top: var(--s-7); border-radius: var(--r-lg); overflow: hidden; }
+.faq__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 30% 50%; }
+@media (max-width: 1023px) { .faq__photo { flex: none; aspect-ratio: 16 / 9; min-height: 0; margin-bottom: var(--s-7); } }
+/* the tablet: each section on its screens (layout-v4.md, the tablet) */
+@media (min-width: 640px) and (max-width: 1023px) {
+  main > #ritual[data-moment]:not(.is-live) { height: calc(2 * 100svh); }
+  .develop { aspect-ratio: 2 / 1; }
+  #duvidas { --h: 2; }
+  .faq__photo { aspect-ratio: 4 / 3; }
+  .book__photo { aspect-ratio: 16 / 9; }
+}
+@media (max-width: 639px) { main > #tratamentos > .wrap > .grid.fill { flex: none; display: block; } #tratamentos .frame--fill { flex: none; height: auto; aspect-ratio: 4 / 3; margin-top: var(--s-6); } .hero h1 { font-size: 40px; } .develop { aspect-ratio: 16 / 10; margin-top: var(--s-6); } }
+#espaco .film { height: clamp(280px, calc(100svh - var(--padt) - var(--padb) - var(--bar) - 240px), 720px); }
+@media (min-width: 1024px) { @media (max-width: 639px) { main > #tratamentos > .wrap > .grid.fill { flex: none; display: block; } #tratamentos .frame--fill { flex: none; height: auto; aspect-ratio: 4 / 3; margin-top: var(--s-6); } .hero h1 { font-size: 40px; } .develop { aspect-ratio: 16 / 10; margin-top: var(--s-6); } }
+#espaco .film { height: clamp(280px, calc(100svh - var(--padt) - var(--padb) - 200px), 640px); } }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["HairSalon", "DaySpa"],
+      "@id": "#kelly",
+      "name": "KELLY Terapia Capilar & Head Spa",
+      "alternateName": "Kelly Cabelos",
+      "description": "Head spa e terapia capilar em Guariba, SP: análise do couro cabeludo, esfoliação, limpeza profunda e massagem com água morna em lavatório-maca.",
+      "url": "https://kellycabelos.com.br/",
+      "image": "https://kellycabelos.com.br/share.jpg",
+      "telephone": "+55 16 99207-2920",
+      "founder": { "@type": "Person", "name": "Kelly Jaquelinis", "jobTitle": "Terapeuta capilar" },
+      "sameAs": ["https://www.instagram.com/kellycabelos.terapiacapilar/", "https://www.facebook.com/lojamariacabeluda", "https://www.vitrinis.com.br/v/kellycabelos"],
+      "address": { "@type": "PostalAddress", "addressLocality": "Guariba", "addressRegion": "SP", "addressCountry": "BR" },
+      "areaServed": ["Guariba", "Jaboticabal", "Pradópolis", "Taquaritinga", "Monte Alto", "Ribeirão Preto"],
+      "knowsAbout": ["head spa", "terapia capilar", "spa capilar", "massagem capilar", "saúde do couro cabeludo"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Tratamentos",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Head spa", "description": "Ritual com análise do couro cabeludo, esfoliação, limpeza profunda e massagem com água morna." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Terapia capilar", "description": "Protocolos para oleosidade, caspa, sensibilidade e fios enfraquecidos." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cartão-presente de head spa" } }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "O que é head spa?", "acceptedAnswer": { "@type": "Answer", "text": "Um ritual japonês de cuidado do couro cabeludo: análise, esfoliação, limpeza profunda e massagem com água morna." } },
+        { "@type": "Question", "name": "Head spa é o mesmo que terapia capilar?", "acceptedAnswer": { "@type": "Answer", "text": "São parentes. A terapia trata uma necessidade em sessões de protocolo; o head spa é o ritual completo, com massagem." } },
+        { "@type": "Question", "name": "Head spa ajuda na queda de cabelo?", "acceptedAnswer": { "@type": "Answer", "text": "Um couro cabeludo equilibrado favorece fios saudáveis, mas não substitui o dermatologista em queda intensa ou repentina." } },
+        { "@type": "Question", "name": "Com que frequência fazer head spa?", "acceptedAnswer": { "@type": "Answer", "text": "Indicamos o intervalo na avaliação; muitas clientes voltam a cada quatro a seis semanas." } },
+        { "@type": "Question", "name": "Preciso lavar o cabelo antes do head spa?", "acceptedAnswer": { "@type": "Answer", "text": "Não. A limpeza faz parte do ritual." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<!-- type: service (terapia capilar e head spa, Guariba-SP)
+     deal: hero split, nav nav-centre, close close-photo, footer footer-visit, rhythm dark-band, buttons arrow,
+     mark: the client's own logo (Guia v1.1), palette: client brand via start.mjs brand, type: GFS Didot + Jost (brand)
+     moments: pinned-chapters in #ritual (the four steps of the ritual, one frame changing), picture-develops in
+     #lavatorio (the lavatório comes up out of the paper as it enters: the transformation) -->
+<!--SPRITE--><svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><path id="k-strand-a" fill="currentColor" d="M113.408 87.2917C115.949 72.4085 129.726 63.2878 130.191 50.5196C130.817 33.2573 108.75 20.4239 108.75 20.4239C108.75 20.4239 131.655 32.779 131.948 50.0412C132.167 62.8083 119.923 73.8924 118.174 88.7768C116.414 103.761 122.157 114.941 132.693 129.074C120.92 115.971 110.85 102.278 113.408 87.2917Z"/><path id="k-strand-b" fill="currentColor" d="M154.3 123.07C154.3 123.07 123.58 114.609 123.68 88.9546C123.762 67.7843 153.765 48.6689 152.945 24.3783C152.856 21.7425 151.791 18.3541 150.706 15.7847C147.558 8.76761 142.222 2.97387 142.222 2.97387C142.222 2.97387 150.541 9.79688 153.809 17.832C154.346 19.3471 155.026 21.7725 155.091 23.3227C156.266 51.1294 127.771 69.0377 128.185 87.06C128.771 112.703 154.3 123.07 154.3 123.07Z"/><symbol id="k-logo-h" viewBox="0 0 310 78.2"><g fill="currentColor"><g transform="translate(-67.46 -1.86) scale(0.62)"><path d="M113.408 87.2917C115.949 72.4085 129.726 63.2878 130.191 50.5196C130.817 33.2573 108.75 20.4239 108.75 20.4239C108.75 20.4239 131.655 32.779 131.948 50.0412C132.167 62.8083 119.923 73.8924 118.174 88.7768C116.414 103.761 122.157 114.941 132.693 129.074C120.92 115.971 110.85 102.278 113.408 87.2917Z"/><path d="M154.3 123.07C154.3 123.07 123.58 114.609 123.68 88.9546C123.762 67.7843 153.765 48.6689 152.945 24.3783C152.856 21.7425 151.791 18.3541 150.706 15.7847C147.558 8.76761 142.222 2.97387 142.222 2.97387C142.222 2.97387 150.541 9.79688 153.809 17.832C154.346 19.3471 155.026 21.7725 155.091 23.3227C156.266 51.1294 127.771 69.0377 128.185 87.06C128.771 112.703 154.3 123.07 154.3 123.07Z"/></g><path transform="translate(47.10 -149.75)" d="M56.772 212.644V215H34.276V212.644C37.924 212.644 39.748 211.985 39.748 210.668C39.748 209.908 39.4947 209.097 38.988 208.236L26.144 186.348L16.34 197.52V212.644H23.408V215H2.356V212.644H9.424V164.992H2.356V162.636H23.56V164.992H16.492V193.112L36.936 170.464C37.8987 169.501 38.38 168.64 38.38 167.88C38.38 167.12 38.152 166.436 37.696 165.828C37.2907 165.22 35.6947 164.941 32.908 164.992V162.636H51.908V164.992C48.6147 164.992 46.3093 165.423 44.992 166.284C43.7253 167.145 41.7747 169.071 39.14 172.06L31.54 180.572L47.576 208.388C47.6267 208.54 47.7533 208.793 47.956 209.148L48.412 209.984C49.172 211.251 49.9827 212.036 50.844 212.34C51.3 212.543 53.276 212.644 56.772 212.644ZM109.166 196.836H111.598L110.762 215H66.6057V212.644H73.7497V164.992H66.6057V162.636H109.546L109.698 178.064H107.342C106.987 173.656 105.771 170.439 103.694 168.412C101.616 166.335 98.2217 165.245 93.5097 165.144L80.5137 164.992V187.032H89.7857C91.9644 187.032 93.5857 186.399 94.6497 185.132C95.815 183.511 96.3977 181.155 96.3977 178.064H98.7537V199.116H96.3977C96.3977 196.127 95.7644 193.796 94.4977 192.124C93.2817 190.452 91.711 189.616 89.7857 189.616H80.5137V212.644L94.7257 212.416C96.1444 212.416 97.8417 212.036 99.8177 211.276C101.844 210.516 103.339 209.655 104.302 208.692C107.342 205.855 108.963 201.903 109.166 196.836ZM163.676 196.836H166.108L165.12 215H123.7V212.644H130.844V164.992H123.7V162.636H144.752V164.992H137.608V212.644L149.236 212.416C150.604 212.416 152.301 212.036 154.328 211.276C156.355 210.516 157.849 209.655 158.812 208.692C161.852 205.855 163.473 201.903 163.676 196.836ZM214.94 196.836H217.372L216.384 215H174.964V212.644H182.108V164.992H174.964V162.636H196.016V164.992H188.872V212.644L200.5 212.416C201.868 212.416 203.566 212.036 205.592 211.276C207.619 210.516 209.114 209.655 210.076 208.692C213.116 205.855 214.738 201.903 214.94 196.836ZM262.873 162.636L262.949 165.448C259.959 165.347 258.085 165.701 257.325 166.512C256.261 167.475 254.994 169.527 253.525 172.668L242.505 194.024V212.72L249.801 212.644V215.076L228.369 215V212.644L235.361 212.72V194.404L218.641 164.992H212.865V162.636H232.701V164.992H227.077L240.833 190.452L249.497 173.504C251.017 170.869 251.777 168.868 251.777 167.5C251.777 166.892 251.371 166.259 250.561 165.6C250.155 165.195 248.686 165.043 246.153 165.144L246.229 162.636H262.873Z"/></g></symbol><symbol id="k-logo-v" viewBox="0 0 265 257"><g fill="currentColor"><path d="M113.408 87.2917C115.949 72.4085 129.726 63.2878 130.191 50.5196C130.817 33.2573 108.75 20.4239 108.75 20.4239C108.75 20.4239 131.655 32.779 131.948 50.0412C132.167 62.8083 119.923 73.8924 118.174 88.7768C116.414 103.761 122.157 114.941 132.693 129.074C120.92 115.971 110.85 102.278 113.408 87.2917Z"/><path d="M154.3 123.07C154.3 123.07 123.58 114.609 123.68 88.9546C123.762 67.7843 153.765 48.6689 152.945 24.3783C152.856 21.7425 151.791 18.3541 150.706 15.7847C147.558 8.76761 142.222 2.97387 142.222 2.97387C142.222 2.97387 150.541 9.79688 153.809 17.832C154.346 19.3471 155.026 21.7725 155.091 23.3227C156.266 51.1294 127.771 69.0377 128.185 87.06C128.771 112.703 154.3 123.07 154.3 123.07Z"/><path d="M56.772 212.644V215H34.276V212.644C37.924 212.644 39.748 211.985 39.748 210.668C39.748 209.908 39.4947 209.097 38.988 208.236L26.144 186.348L16.34 197.52V212.644H23.408V215H2.356V212.644H9.424V164.992H2.356V162.636H23.56V164.992H16.492V193.112L36.936 170.464C37.8987 169.501 38.38 168.64 38.38 167.88C38.38 167.12 38.152 166.436 37.696 165.828C37.2907 165.22 35.6947 164.941 32.908 164.992V162.636H51.908V164.992C48.6147 164.992 46.3093 165.423 44.992 166.284C43.7253 167.145 41.7747 169.071 39.14 172.06L31.54 180.572L47.576 208.388C47.6267 208.54 47.7533 208.793 47.956 209.148L48.412 209.984C49.172 211.251 49.9827 212.036 50.844 212.34C51.3 212.543 53.276 212.644 56.772 212.644ZM109.166 196.836H111.598L110.762 215H66.6057V212.644H73.7497V164.992H66.6057V162.636H109.546L109.698 178.064H107.342C106.987 173.656 105.771 170.439 103.694 168.412C101.616 166.335 98.2217 165.245 93.5097 165.144L80.5137 164.992V187.032H89.7857C91.9644 187.032 93.5857 186.399 94.6497 185.132C95.815 183.511 96.3977 181.155 96.3977 178.064H98.7537V199.116H96.3977C96.3977 196.127 95.7644 193.796 94.4977 192.124C93.2817 190.452 91.711 189.616 89.7857 189.616H80.5137V212.644L94.7257 212.416C96.1444 212.416 97.8417 212.036 99.8177 211.276C101.844 210.516 103.339 209.655 104.302 208.692C107.342 205.855 108.963 201.903 109.166 196.836ZM163.676 196.836H166.108L165.12 215H123.7V212.644H130.844V164.992H123.7V162.636H144.752V164.992H137.608V212.644L149.236 212.416C150.604 212.416 152.301 212.036 154.328 211.276C156.355 210.516 157.849 209.655 158.812 208.692C161.852 205.855 163.473 201.903 163.676 196.836ZM214.94 196.836H217.372L216.384 215H174.964V212.644H182.108V164.992H174.964V162.636H196.016V164.992H188.872V212.644L200.5 212.416C201.868 212.416 203.566 212.036 205.592 211.276C207.619 210.516 209.114 209.655 210.076 208.692C213.116 205.855 214.738 201.903 214.94 196.836ZM262.873 162.636L262.949 165.448C259.959 165.347 258.085 165.701 257.325 166.512C256.261 167.475 254.994 169.527 253.525 172.668L242.505 194.024V212.72L249.801 212.644V215.076L228.369 215V212.644L235.361 212.72V194.404L218.641 164.992H212.865V162.636H232.701V164.992H227.077L240.833 190.452L249.497 173.504C251.017 170.869 251.777 168.868 251.777 167.5C251.777 166.892 251.371 166.259 250.561 165.6C250.155 165.195 248.686 165.043 246.153 165.144L246.229 162.636H262.873Z"/><path d="M0.154 245.452V244.22H7.007V245.452H4.235V255H2.926V245.452H0.154ZM11.2704 255V253.768H16.7066V255H11.2704ZM11.2704 245.452V244.22H16.7066V245.452H11.2704ZM11.2704 249.764V248.532H16.3986V249.764H11.2704ZM10.5466 244.22H11.8556V255H10.5466V244.22ZM23.0946 249.687H24.5576L28.4076 255H26.7906L23.0946 249.687ZM21.1696 244.22H22.4786V255H21.1696V244.22ZM21.8934 245.375V244.22H24.0956C24.7937 244.22 25.4149 244.353 25.959 244.62C26.5134 244.877 26.9497 245.247 27.268 245.729C27.5965 246.212 27.7608 246.787 27.7608 247.454C27.7608 248.111 27.5965 248.686 27.268 249.179C26.9497 249.661 26.5134 250.036 25.959 250.303C25.4149 250.56 24.7937 250.688 24.0956 250.688H21.8934V249.533H24.0956C24.5576 249.533 24.9631 249.451 25.3122 249.287C25.6715 249.122 25.9487 248.886 26.1438 248.578C26.3491 248.27 26.4518 247.895 26.4518 247.454C26.4518 247.013 26.3491 246.638 26.1438 246.33C25.9487 246.022 25.6715 245.786 25.3122 245.621C24.9631 245.457 24.5576 245.375 24.0956 245.375H21.8934ZM32.9748 251.766L33.4368 250.534H38.2108L38.6728 251.766H32.9748ZM35.793 246.653L33.9758 250.934L33.8526 251.212L32.251 255H30.788L35.793 243.681L40.798 255H39.335L37.7642 251.304L37.641 250.996L35.793 246.653ZM44.2654 244.22H45.5744V255H44.2654V244.22ZM44.9892 245.452V244.22H47.1914C47.8895 244.22 48.5106 244.353 49.0548 244.62C49.6092 244.877 50.0455 245.247 50.3638 245.729C50.6923 246.212 50.8566 246.787 50.8566 247.454C50.8566 248.111 50.6923 248.686 50.3638 249.179C50.0455 249.661 49.6092 250.036 49.0548 250.303C48.5106 250.56 47.8895 250.688 47.1914 250.688H44.9892V249.456H47.1914C47.8895 249.456 48.4542 249.287 48.8854 248.948C49.3268 248.609 49.5476 248.111 49.5476 247.454C49.5476 246.787 49.3268 246.289 48.8854 245.96C48.4542 245.621 47.8895 245.452 47.1914 245.452H44.9892ZM54.8583 244.22H56.1673V255H54.8583V244.22ZM61.8209 251.766L62.2829 250.534H67.0569L67.5189 251.766H61.8209ZM64.6391 246.653L62.8219 250.934L62.6987 251.212L61.0971 255H59.6341L64.6391 243.681L69.6441 255H68.1811L66.6103 251.304L66.4871 250.996L64.6391 246.653ZM80.6545 249.61C80.6545 250.442 80.8393 251.176 81.2089 251.812C81.5888 252.449 82.0816 252.947 82.6873 253.306C83.293 253.665 83.9501 253.845 84.6585 253.845C85.1718 253.845 85.639 253.778 86.0599 253.645C86.4911 253.511 86.8812 253.327 87.2303 253.09C87.5794 252.844 87.8771 252.562 88.1235 252.243V253.968C87.6718 254.369 87.179 254.666 86.6451 254.861C86.1112 255.056 85.449 255.154 84.6585 255.154C83.909 255.154 83.2058 255.021 82.5487 254.754C81.9019 254.476 81.3321 254.091 80.8393 253.599C80.3465 253.096 79.9615 252.505 79.6843 251.828C79.4071 251.15 79.2685 250.411 79.2685 249.61C79.2685 248.809 79.4071 248.07 79.6843 247.392C79.9615 246.715 80.3465 246.13 80.8393 245.637C81.3321 245.134 81.9019 244.749 82.5487 244.482C83.2058 244.205 83.909 244.066 84.6585 244.066C85.449 244.066 86.1112 244.164 86.6451 244.359C87.179 244.554 87.6718 244.851 88.1235 245.252V246.977C87.8771 246.658 87.5794 246.381 87.2303 246.145C86.8812 245.899 86.4911 245.709 86.0599 245.575C85.639 245.442 85.1718 245.375 84.6585 245.375C83.9501 245.375 83.293 245.555 82.6873 245.914C82.0816 246.273 81.5888 246.771 81.2089 247.408C80.8393 248.034 80.6545 248.768 80.6545 249.61ZM93.3891 251.766L93.8511 250.534H98.6251L99.0871 251.766H93.3891ZM96.2073 246.653L94.3901 250.934L94.2669 251.212L92.6653 255H91.2023L96.2073 243.681L101.212 255H99.7493L98.1785 251.304L98.0553 250.996L96.2073 246.653ZM104.68 244.22H105.989V255H104.68V244.22ZM105.403 245.452V244.22H107.606C108.304 244.22 108.925 244.353 109.469 244.62C110.023 244.877 110.46 245.247 110.778 245.729C111.107 246.212 111.271 246.787 111.271 247.454C111.271 248.111 111.107 248.686 110.778 249.179C110.46 249.661 110.023 250.036 109.469 250.303C108.925 250.56 108.304 250.688 107.606 250.688H105.403V249.456H107.606C108.304 249.456 108.868 249.287 109.3 248.948C109.741 248.609 109.962 248.111 109.962 247.454C109.962 246.787 109.741 246.289 109.3 245.96C108.868 245.621 108.304 245.452 107.606 245.452H105.403ZM115.273 244.22H116.582V255H115.273V244.22ZM121.203 244.22H122.512V253.768H126.747V255H121.203V244.22ZM131.79 251.766L132.252 250.534H137.026L137.488 251.766H131.79ZM134.609 246.653L132.791 250.934L132.668 251.212L131.067 255H129.604L134.609 243.681L139.614 255H138.151L136.58 251.304L136.457 250.996L134.609 246.653ZM145.006 249.687H146.469L150.319 255H148.702L145.006 249.687ZM143.081 244.22H144.39V255H143.081V244.22ZM143.805 245.375V244.22H146.007C146.705 244.22 147.326 244.353 147.87 244.62C148.425 244.877 148.861 245.247 149.179 245.729C149.508 246.212 149.672 246.787 149.672 247.454C149.672 248.111 149.508 248.686 149.179 249.179C148.861 249.661 148.425 250.036 147.87 250.303C147.326 250.56 146.705 250.688 146.007 250.688H143.805V249.533H146.007C146.469 249.533 146.875 249.451 147.224 249.287C147.583 249.122 147.86 248.886 148.055 248.578C148.261 248.27 148.363 247.895 148.363 247.454C148.363 247.013 148.261 246.638 148.055 246.33C147.86 246.022 147.583 245.786 147.224 245.621C146.875 245.457 146.469 245.375 146.007 245.375H143.805ZM162.83 249.086C162.665 248.891 162.45 248.665 162.183 248.409C161.926 248.142 161.695 247.844 161.49 247.516C161.295 247.187 161.197 246.828 161.197 246.438C161.197 245.955 161.31 245.534 161.536 245.175C161.762 244.815 162.07 244.538 162.46 244.343C162.86 244.148 163.317 244.051 163.831 244.051C164.375 244.051 164.837 244.164 165.217 244.389C165.607 244.615 165.904 244.913 166.11 245.283C166.315 245.642 166.418 246.037 166.418 246.468C166.418 246.725 166.366 246.977 166.264 247.223C166.161 247.469 166.012 247.716 165.817 247.962C165.622 248.198 165.386 248.429 165.109 248.655C164.832 248.871 164.513 249.086 164.154 249.302C163.877 249.466 163.574 249.636 163.245 249.81C162.917 249.974 162.604 250.164 162.306 250.38C162.019 250.585 161.782 250.827 161.598 251.104C161.413 251.381 161.32 251.715 161.32 252.105C161.32 252.495 161.418 252.834 161.613 253.121C161.818 253.409 162.09 253.629 162.429 253.783C162.768 253.937 163.143 254.014 163.553 254.014C164.046 254.014 164.518 253.907 164.97 253.691C165.432 253.475 165.874 253.188 166.295 252.829C166.716 252.459 167.121 252.043 167.511 251.581C167.912 251.119 168.297 250.637 168.666 250.134L169.621 250.734C169.21 251.268 168.789 251.802 168.358 252.336C167.927 252.859 167.465 253.332 166.972 253.753C166.479 254.174 165.946 254.512 165.371 254.769C164.796 255.026 164.164 255.154 163.476 255.154C162.891 255.154 162.332 255.036 161.798 254.8C161.274 254.553 160.843 254.209 160.504 253.768C160.176 253.316 160.011 252.788 160.011 252.182C160.011 251.73 160.088 251.335 160.242 250.996C160.407 250.657 160.612 250.359 160.858 250.103C161.115 249.846 161.392 249.625 161.69 249.441C161.988 249.256 162.28 249.097 162.568 248.963C162.855 248.819 163.102 248.691 163.307 248.578C163.882 248.25 164.334 247.906 164.662 247.546C165.001 247.177 165.17 246.817 165.17 246.468C165.17 246.201 165.114 245.97 165.001 245.775C164.898 245.58 164.749 245.426 164.554 245.313C164.359 245.2 164.118 245.144 163.831 245.144C163.41 245.144 163.081 245.262 162.845 245.498C162.609 245.734 162.491 246.047 162.491 246.438C162.491 246.787 162.629 247.12 162.907 247.439C163.184 247.757 163.476 248.096 163.784 248.455L169.482 255H168.004L162.83 249.086ZM180.672 249.764V248.532H188.064V249.764H180.672ZM187.186 244.22H188.495V255H187.186V244.22ZM179.948 244.22H181.257V255H179.948V244.22ZM193.837 255V253.768H199.273V255H193.837ZM193.837 245.452V244.22H199.273V245.452H193.837ZM193.837 249.764V248.532H198.965V249.764H193.837ZM193.113 244.22H194.422V255H193.113V244.22ZM204.768 251.766L205.23 250.534H210.004L210.466 251.766H204.768ZM207.586 246.653L205.769 250.934L205.646 251.212L204.044 255H202.581L207.586 243.681L212.591 255H211.128L209.557 251.304L209.434 250.996L207.586 246.653ZM216.058 244.22H217.367V255H216.058V244.22ZM219.292 255H216.782V253.691H219.292C219.898 253.691 220.453 253.599 220.956 253.414C221.459 253.219 221.89 252.947 222.249 252.598C222.609 252.238 222.886 251.807 223.081 251.304C223.276 250.801 223.373 250.236 223.373 249.61C223.373 248.984 223.276 248.419 223.081 247.916C222.886 247.413 222.609 246.987 222.249 246.638C221.89 246.278 221.459 246.006 220.956 245.822C220.453 245.627 219.898 245.529 219.292 245.529H216.782V244.22H219.292C220.34 244.22 221.269 244.446 222.08 244.898C222.891 245.349 223.527 245.981 223.989 246.792C224.451 247.593 224.682 248.532 224.682 249.61C224.682 250.688 224.451 251.633 223.989 252.444C223.527 253.244 222.891 253.871 222.08 254.322C221.269 254.774 220.34 255 219.292 255ZM235.855 251.735C236.101 252.166 236.358 252.546 236.625 252.875C236.902 253.203 237.21 253.46 237.549 253.645C237.888 253.83 238.273 253.922 238.704 253.922C239.279 253.922 239.741 253.763 240.09 253.445C240.439 253.126 240.614 252.721 240.614 252.228C240.614 251.745 240.501 251.36 240.275 251.073C240.049 250.786 239.751 250.555 239.382 250.38C239.022 250.195 238.637 250.031 238.227 249.887C237.96 249.795 237.662 249.677 237.333 249.533C237.005 249.379 236.692 249.189 236.394 248.963C236.096 248.727 235.85 248.44 235.655 248.101C235.47 247.762 235.378 247.346 235.378 246.853C235.378 246.32 235.511 245.842 235.778 245.421C236.045 245 236.414 244.672 236.887 244.436C237.359 244.189 237.898 244.066 238.504 244.066C239.089 244.066 239.597 244.179 240.028 244.405C240.47 244.62 240.845 244.903 241.153 245.252C241.461 245.591 241.702 245.95 241.876 246.33L240.752 246.977C240.619 246.71 240.449 246.448 240.244 246.191C240.039 245.935 239.787 245.724 239.489 245.56C239.202 245.396 238.848 245.313 238.427 245.313C237.842 245.313 237.415 245.457 237.149 245.745C236.882 246.022 236.748 246.335 236.748 246.684C236.748 246.982 236.825 247.259 236.979 247.516C237.133 247.762 237.39 247.998 237.749 248.224C238.119 248.44 238.617 248.655 239.243 248.871C239.53 248.973 239.833 249.107 240.152 249.271C240.47 249.435 240.762 249.646 241.029 249.903C241.307 250.149 241.532 250.452 241.707 250.811C241.881 251.16 241.969 251.581 241.969 252.074C241.969 252.546 241.876 252.972 241.692 253.352C241.517 253.732 241.271 254.055 240.952 254.322C240.644 254.589 240.29 254.795 239.89 254.938C239.5 255.082 239.089 255.154 238.658 255.154C238.073 255.154 237.528 255.031 237.025 254.784C236.533 254.528 236.096 254.194 235.716 253.783C235.347 253.362 235.044 252.916 234.808 252.444L235.855 251.735ZM246.047 244.22H247.356V255H246.047V244.22ZM246.771 245.452V244.22H248.973C249.672 244.22 250.293 244.353 250.837 244.62C251.391 244.877 251.828 245.247 252.146 245.729C252.474 246.212 252.639 246.787 252.639 247.454C252.639 248.111 252.474 248.686 252.146 249.179C251.828 249.661 251.391 250.036 250.837 250.303C250.293 250.56 249.672 250.688 248.973 250.688H246.771V249.456H248.973C249.672 249.456 250.236 249.287 250.667 248.948C251.109 248.609 251.33 248.111 251.33 247.454C251.33 246.787 251.109 246.289 250.667 245.96C250.236 245.621 249.672 245.452 248.973 245.452H246.771ZM256.589 251.766L257.051 250.534H261.825L262.287 251.766H256.589ZM259.408 246.653L257.59 250.934L257.467 251.212L255.866 255H254.403L259.408 243.681L264.413 255H262.95L261.379 251.304L261.256 250.996L259.408 246.653Z"/></g></symbol></defs></svg><!--/SPRITE-->
+
+<header class="nav nav--centre">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top">Pular para o conteúdo</a>
+    <a class="nav__logo" href="#top" aria-label="KELLY Terapia Capilar &amp; Head Spa, início"><svg class="k-logo" viewBox="0 0 310 78.2" aria-hidden="true"><use href="#k-logo-h"/></svg></a>
+    <nav class="nav__links" aria-label="Principal">
+      <div class="nav__item"><a class="nav__link" href="#ritual">Ritual</a></div>
+      <div class="nav__item">
+        <a class="nav__link" href="#tratamentos">Tratamentos <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="nav__menu">
+          <div class="wrap grid">
+            <div class="menu-col span-3">
+              <p class="t-label">Cuidado</p>
+              <a href="#tratamentos">Head spa<span>O ritual completo</span></a>
+              <a href="#tratamentos">Terapia capilar<span>Protocolos para o couro cabeludo</span></a>
+            </div>
+            <div class="menu-col span-3">
+              <p class="t-label">Mais</p>
+              <a href="#tratamentos">Produtos para casa<span>Os cuidados entre as sessões</span></a>
+              <a href="#tratamentos">Cartão-presente<span>Quem recebe escolhe o dia</span></a>
+            </div>
+            <a class="menu-card span-3 start-10" href="#lavatorio">
+              <div class="panel"><img class="frame__img" src="assets/img/arco-maos.jpg" width="550" height="373" alt="Mãos massageando o couro cabeludo sob o arco de água" loading="lazy"></div>
+              <span class="t-card">O arco de água morna</span>
+              <span class="t-small muted">No lavatório-maca Levitá</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav__item"><a class="nav__link" href="#lavatorio">Lavatório</a></div>
+      <div class="nav__item"><a class="nav__link" href="#kelly">Kelly</a></div>
+      <div class="nav__item"><a class="nav__link" href="#espaco">Espaço</a></div>
+      <div class="nav__item"><a class="nav__link" href="#duvidas">Dúvidas</a></div>
+    </nav>
+    <div class="nav__actions">
+      <a class="nav__link" href="/vitrine/" target="_blank" rel="noopener">Loja</a>
+      <a class="btn btn--primary" href="#agendar">Agendar head spa</a>
+    </div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero hero--photo hero--centre" data-box="none" data-tone="dark" data-enter aria-labelledby="hero-h">
+    <!-- hero film: the water arch (assets/video/head-spa-hero.mp4, 1600x900 loop; -m.mp4 720x720 for phones) -->
+    <video class="hero__bg hero__film" muted loop playsinline preload="none" poster="assets/img/hero-arco.jpg" aria-hidden="true" tabindex="-1" style="--ly-pos: 50% 40%; --ly-pos-phone: 50% 50%"
+           data-src="assets/video/head-spa-hero.mp4" data-src-m="assets/video/head-spa-hero-m.mp4"></video>
+    <div class="wrap"><button class="hero__pause" type="button" aria-label="Pausar vídeo" hidden><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path class="i-pause" d="M4.5 3h2.5v10H4.5zM9 3h2.5v10H9z" fill="currentColor"/><path class="i-play" d="M5 3l8 5-8 5z" fill="currentColor"/></svg></button><div class="hero-text">
+      <div class="hero__text">
+        <svg class="hero__symbol" viewBox="106 1 52 130" aria-hidden="true" focusable="false"><use href="#k-strand-a"/><use href="#k-strand-b"/></svg>
+        <h1 id="hero-h"><span class="nw">Desacelere.</span> <span class="nw">Reconecte-se.</span> <span class="nw">Floresça.</span></h1>
+        <p class="hero__lead">Uma experiência exclusiva de Head Spa que combina cuidado capilar, relaxamento e bem-estar em um ritual pensado para renovar seus sentidos.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="#agendar">Agendar head spa<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+          <a class="btn btn--secondary" href="#ritual">Ver o ritual</a>
+        </div>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- pinned-chapters: the four steps of the ritual, one frame at the right changing to each step's room -->
+  <section class="section" id="ritual" style="--h: 2" data-moment="pinned-chapters" aria-labelledby="ritual-h">
+    <div class="wrap mo-pc__grid">
+      <div class="mo-pc__text">
+        <h2 id="ritual-h">O ritual de head spa em quatro etapas</h2>
+        <ol class="mo-pc__steps">
+          <li class="mo-pc__step">
+            <h3><span class="step-n">01</span> Análise do couro cabeludo</h3>
+            <p>Ouvimos sua rotina e olhamos o couro cabeludo de perto: oleosidade, sensibilidade, descamação. Daí sai o protocolo do dia.</p>
+            <figure class="mo-pc__visual"><img src="assets/img/sala-conversa.jpg" srcset="assets/img/sala-conversa-600.jpg 600w, assets/img/sala-conversa-900.jpg 900w, assets/img/sala-conversa.jpg 1312w" sizes="(max-width: 639px) 100vw, 50vw" alt="Duas poltronas claras e uma mesa de atendimento diante de um painel de folhagens" width="1312" height="941" loading="lazy"></figure>
+          </li>
+          <li class="mo-pc__step">
+            <h3><span class="step-n">02</span> Esfoliação e limpeza da raiz</h3>
+            <p>Produtos escolhidos para o seu caso soltam resíduos, excesso de oleosidade e acúmulo de finalizadores, sem agredir os fios.</p>
+            <figure class="mo-pc__visual"><img src="assets/img/agua-ritual.jpg" srcset="assets/img/agua-ritual-600.jpg 600w, assets/img/agua-ritual-900.jpg 900w, assets/img/agua-ritual.jpg 960w" sizes="(max-width: 1023px) 100vw, 50vw" width="960" height="1191" alt="Água morna vertida sobre o couro cabeludo, com máscara de pedras verdes sobre os olhos" loading="lazy" data-source="client"></figure>
+          </li>
+          <li class="mo-pc__step">
+            <h3><span class="step-n">03</span> Massagem com água morna</h3>
+            <p>Deitada no lavatório-maca, você recebe uma massagem lenta na cabeça e na nuca, com enxágue em água morna.</p>
+            <figure class="mo-pc__visual"><img src="assets/img/arco-perfil.jpg" srcset="assets/img/arco-perfil-600.jpg 600w, assets/img/arco-perfil-900.jpg 900w, assets/img/arco-perfil.jpg 1600w" sizes="(max-width: 1023px) 100vw, 50vw" width="1600" height="1065" alt="Cliente de olhos fechados sob o arco dourado que solta fios de água sobre o couro cabeludo" loading="lazy" data-source="client"></figure>
+          </li>
+          <li class="mo-pc__step">
+            <h3><span class="step-n">04</span> Finalização e cuidado em casa</h3>
+            <p>Secagem com calma e uma orientação simples para manter o couro cabeludo equilibrado até a próxima sessão.</p>
+            <figure class="mo-pc__visual"><img src="assets/img/finalizacao.jpg" srcset="assets/img/finalizacao-600.jpg 600w, assets/img/finalizacao-900.jpg 900w, assets/img/finalizacao.jpg 912w" sizes="(max-width: 639px) 100vw, 50vw" alt="Bancada de madeira ripada com espelhos, arandelas e cadeira de salão" width="912" height="941" loading="lazy"></figure>
+          </li>
+        </ol>
+      </div>
+      <div class="mo-pc__visuals frame"></div>
+    </div>
+  </section>
+
+  <section class="section" id="tratamentos" aria-labelledby="tratamentos-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="tratamentos-h">Head spa e terapia capilar</h2>
+        <p>Todo atendimento começa pela avaliação do couro cabeludo. Valores informados na avaliação.</p>
+      </div>
+      <div class="grid grid--top fill" data-peek>
+        <ul class="rows span-6">
+          <li data-peek-to="headspa" tabindex="0"><span class="rows__name">Head spa</span><p>Análise, esfoliação, limpeza profunda e massagem com água morna.</p><span class="rows__value">Ritual</span></li>
+          <li data-peek-to="terapia" tabindex="0"><span class="rows__name">Terapia capilar</span><p>Protocolos para oleosidade, caspa, sensibilidade e fios enfraquecidos.</p><span class="rows__value">Sessões</span></li>
+          <li data-peek-to="produtos" tabindex="0"><span class="rows__name">Produtos para casa</span><p>Os cuidados indicados na avaliação, para manter o resultado entre as sessões.</p><span class="rows__value">Loja</span></li>
+          <li data-peek-to="presente" tabindex="0"><span class="rows__name">Cartão-presente</span><p>Um head spa para dar a alguém; quem recebe escolhe o dia.</p><span class="rows__value">Presente</span></li>
+        </ul>
+        <div class="frame frame--photo frame--fill span-6 start-7">
+          <img class="frame__img" data-peek-for="headspa" src="assets/img/arco-sorriso.jpg" srcset="assets/img/arco-sorriso-600.jpg 600w, assets/img/arco-sorriso-900.jpg 900w, assets/img/arco-sorriso.jpg 1600w" sizes="(max-width: 1023px) 100vw, 50vw" width="1600" height="1065" alt="Cliente sorrindo de olhos fechados sob o arco de água do head spa" loading="lazy">
+          <img class="frame__img" data-peek-for="terapia" src="assets/img/avaliacao.jpg" srcset="assets/img/avaliacao-600.jpg 600w, assets/img/avaliacao-900.jpg 900w, assets/img/avaliacao.jpg 1160w" sizes="(max-width: 639px) 100vw, 50vw" width="1160" height="941" alt="Mesa de avaliação com notebook ao lado das estantes de produtos capilares" loading="lazy" hidden>
+          <img class="frame__img" data-peek-for="produtos" src="assets/img/produtos.jpg" width="600" height="941" alt="Estantes com frascos de tratamento capilar e plantas pendentes" loading="lazy" hidden>
+          <img class="frame__img" data-peek-for="presente" src="assets/img/cartao-presente.jpg" srcset="assets/img/cartao-presente-600.jpg 600w, assets/img/cartao-presente-900.jpg 900w, assets/img/cartao-presente.jpg 1600w" sizes="(max-width: 1023px) 100vw, 50vw" width="1600" height="1200" alt="Caixa de presente preta com veios rosé e a frase “O luxo de cuidar de quem sempre cuidou”" loading="lazy" hidden>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- dark band: the strongest visual, the lavatório itself; picture-develops on it -->
+  <section class="section ground-inverse" id="lavatorio" aria-labelledby="lavatorio-h">
+    <div class="wrap grid grid--top">
+      <div class="span-6">
+        <div class="section-head">
+          <h2 id="lavatorio-h">Lavatório-maca Levitá para head spa</h2>
+          <p>No lugar da cadeira de salão, uma maca estofada: o corpo todo apoiado e a nuca sobre a cuba.</p>
+        </div>
+        <ul class="rows">
+          <li><span class="rows__name">Maca estofada<small>Você fica deitada durante todo o ritual</small></span></li>
+          <li><span class="rows__name">Cuba de cerâmica<small>A nuca apoiada, sem tensão no pescoço</small></span></li>
+          <li><span class="rows__name">Ducha em arco<small>Água morna em todo o couro cabeludo</small></span></li>
+        </ul>
+      </div>
+      <figure class="develop span-6 start-7" data-moment="picture-develops"><img src="assets/img/levita-verde.jpg" srcset="assets/img/levita-verde-600.jpg 600w, assets/img/levita-verde-900.jpg 900w, assets/img/levita-verde.jpg 1448w" sizes="(max-width: 639px) 100vw, 50vw" alt="Lavatório-maca Levitá em verde profundo com frisos de madeira, cuba de cerâmica branca e ducha dourada" width="1448" height="1086" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section class="section ground-surface" id="kelly" aria-labelledby="kelly-h">
+    <div class="wrap grid grid--top">
+      <div class="span-6 kelly__text">
+        <div class="section-head">
+          <h2 id="kelly-h">Kelly Jaquelinis, terapeuta capilar</h2>
+          <!-- REVISAR: bio provisória, sem dados de formação ou tempo de carreira; trocar pelos fatos da Kelly -->
+          <p>À frente da KELLY, Kelly Jaquelinis conduz cada ritual de head spa com atenção ao couro cabeludo de cada cliente: escuta antes de tratar, escolhe o protocolo do dia e acompanha a evolução entre as sessões.</p>
+        </div>
+        <p class="t-label kelly__label">Formação e certificações</p>
+        <!-- ILUSTRATIVO: selos e nomes de exemplo; substituir pelos selos reais antes de publicar -->
+        <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+          <path id="seal-arc" d="M 10,60 A 50,50 0 0 1 110,60"/>
+          <path id="seal-arc-b" d="M 14,60 A 46,46 0 0 0 106,60"/>
+        </defs></svg>
+        <ul class="seals"><li class="seal" data-illustrative role="img" aria-label="Selo de certificação: Terapia Capilar"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="57" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="60" cy="60" r="43" fill="none" stroke="currentColor" stroke-width=".8"/><text class="seal__name"><textPath href="#seal-arc" startOffset="50%" text-anchor="middle">TERAPIA CAPILAR</textPath></text><text class="seal__foot"><textPath href="#seal-arc-b" startOffset="50%" text-anchor="middle">CERTIFICAÇÃO</textPath></text><g transform="translate(50.6 36.4) scale(.36)" fill="currentColor"><use href="#k-strand-a" x="-106" y="-1"/><use href="#k-strand-b" x="-106" y="-1"/></g><circle cx="11" cy="60" r="1.6" fill="currentColor"/><circle cx="109" cy="60" r="1.6" fill="currentColor"/></svg></li><li class="seal" data-illustrative role="img" aria-label="Selo de certificação: Tricologia"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="57" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="60" cy="60" r="43" fill="none" stroke="currentColor" stroke-width=".8"/><text class="seal__name"><textPath href="#seal-arc" startOffset="50%" text-anchor="middle">TRICOLOGIA</textPath></text><text class="seal__foot"><textPath href="#seal-arc-b" startOffset="50%" text-anchor="middle">CERTIFICAÇÃO</textPath></text><g transform="translate(50.6 36.4) scale(.36)" fill="currentColor"><use href="#k-strand-a" x="-106" y="-1"/><use href="#k-strand-b" x="-106" y="-1"/></g><circle cx="11" cy="60" r="1.6" fill="currentColor"/><circle cx="109" cy="60" r="1.6" fill="currentColor"/></svg></li><li class="seal" data-illustrative role="img" aria-label="Selo de certificação: Head Spa Japonês"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="57" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="60" cy="60" r="43" fill="none" stroke="currentColor" stroke-width=".8"/><text class="seal__name"><textPath href="#seal-arc" startOffset="50%" text-anchor="middle">HEAD SPA JAPONÊS</textPath></text><text class="seal__foot"><textPath href="#seal-arc-b" startOffset="50%" text-anchor="middle">CERTIFICAÇÃO</textPath></text><g transform="translate(50.6 36.4) scale(.36)" fill="currentColor"><use href="#k-strand-a" x="-106" y="-1"/><use href="#k-strand-b" x="-106" y="-1"/></g><circle cx="11" cy="60" r="1.6" fill="currentColor"/><circle cx="109" cy="60" r="1.6" fill="currentColor"/></svg></li><li class="seal" data-illustrative role="img" aria-label="Selo de certificação: Cosmetologia"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="57" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="60" cy="60" r="43" fill="none" stroke="currentColor" stroke-width=".8"/><text class="seal__name"><textPath href="#seal-arc" startOffset="50%" text-anchor="middle">COSMETOLOGIA</textPath></text><text class="seal__foot"><textPath href="#seal-arc-b" startOffset="50%" text-anchor="middle">CERTIFICAÇÃO</textPath></text><g transform="translate(50.6 36.4) scale(.36)" fill="currentColor"><use href="#k-strand-a" x="-106" y="-1"/><use href="#k-strand-b" x="-106" y="-1"/></g><circle cx="11" cy="60" r="1.6" fill="currentColor"/><circle cx="109" cy="60" r="1.6" fill="currentColor"/></svg></li></ul>
+      </div>
+      <div class="kelly__photo span-6 start-7"><img src="assets/img/kelly-jaquelinis.jpg" srcset="assets/img/kelly-jaquelinis-600.jpg 600w, assets/img/kelly-jaquelinis-900.jpg 900w, assets/img/kelly-jaquelinis.jpg 1100w" sizes="(max-width: 1023px) 100vw, 50vw" width="1100" height="1375" alt="Retrato de Kelly Jaquelinis, de blazer preto, com a mão no queixo" loading="lazy" data-source="client" data-subject="Kelly Jaquelinis"></div>
+    </div>
+  </section>
+
+  <section class="section" id="espaco" aria-labelledby="espaco-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="espaco-h">Um espaço feito para desacelerar</h2>
+        <p>Sala reservada de head spa, luz quente e o arco de água morna sobre o lavatório-maca.</p>
+      </div>
+      <figure class="film frame frame--photo"><picture><source media="(max-width: 639px)" srcset="assets/img/kelly-sala-m.jpg" width="600" height="698"><img class="frame__img" src="assets/img/kelly-sala.jpg" srcset="assets/img/kelly-sala-600.jpg 600w, assets/img/kelly-sala-900.jpg 900w, assets/img/kelly-sala.jpg 1448w" sizes="(max-width: 1023px) 100vw, 1280px" width="1448" height="1086" alt="Sala de head spa da KELLY: cliente sob o arco dourado, mãos massageando os cabelos e o logotipo dourado na parede de madeira" loading="lazy" data-source="client" style="object-position: 50% 42%"></picture></figure>
+    </div>
+  </section>
+
+  <section class="section" id="duvidas" aria-labelledby="duvidas-h">
+    <div class="wrap grid grid--top">
+      <div class="span-6 faq__side">
+        <div class="section-head">
+          <h2 id="duvidas-h">Perguntas sobre head spa</h2>
+          <p>As dúvidas de quem vai experimentar pela primeira vez.</p>
+        </div>
+        <div class="faq__photo"><img src="assets/img/arco-terapeutas.jpg" srcset="assets/img/arco-terapeutas-600.jpg 600w, assets/img/arco-terapeutas-900.jpg 900w, assets/img/arco-terapeutas.jpg 1344w" sizes="(max-width: 1023px) 100vw, 50vw" width="1344" height="768" alt="Cliente relaxada sob o arco de água enquanto duas terapeutas massageiam ombros e couro cabeludo" loading="lazy" style="object-position: 60% 50%" data-source="client" data-subject="head spa"></div>
+      </div>
+      <div class="faq span-6 start-7">
+        <div class="faq__item"><h3>O que é head spa?</h3><p>Um ritual japonês de cuidado do couro cabeludo: análise, esfoliação, limpeza profunda e massagem com água morna.</p></div>
+        <div class="faq__item"><h3>Head spa é o mesmo que terapia capilar?</h3><p>São parentes. A terapia trata uma necessidade em sessões de protocolo; o head spa é o ritual completo, com massagem.</p></div>
+        <div class="faq__item"><h3>Head spa ajuda na queda de cabelo?</h3><p>Um couro cabeludo equilibrado favorece fios saudáveis, mas não substitui o dermatologista em queda intensa ou repentina.</p></div>
+        <div class="faq__item"><h3>Com que frequência fazer head spa?</h3><p>Indicamos o intervalo na avaliação; muitas clientes voltam a cada quatro a seis semanas.</p></div>
+        <div class="faq__item"><h3>Preciso lavar o cabelo antes do head spa?</h3><p>Não. A limpeza faz parte do ritual.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="agendar" aria-labelledby="agendar-h">
+    <div class="wrap grid grid--top">
+      <div class="span-6">
+        <div class="section-head">
+          <h2 id="agendar-h">Agende seu head spa</h2>
+          <p>Escolha o tratamento e o melhor dia: o WhatsApp abre com a mensagem pronta e confirmamos o horário por lá. Atendimento com hora marcada em Guariba, SP.</p>
+        </div>
+        <!-- the form writes the message and opens the salon's WhatsApp (wa.me); only the hidden "text" field is sent -->
+        <form class="form form--wa" action="https://wa.me/5516992072920" method="get" target="_blank" data-endpoint="" data-fix="Campos para preencher: {n}." novalidate>
+          <input type="hidden" name="text" value="">
+          <div class="field"><label for="f-name">Nome</label>
+            <input id="f-name" type="text" autocomplete="name" required aria-describedby="f-name-err">
+            <p class="field__error" id="f-name-err" hidden>Escreva seu nome para o agendamento.</p></div>
+          <div class="field"><label for="f-serv">Tratamento</label>
+            <select id="f-serv">
+              <option>Head spa</option>
+              <option>Terapia capilar</option>
+              <option>Cartão-presente</option>
+            </select></div>
+          <div class="field"><label for="f-dia">Melhor dia e período</label>
+            <input id="f-dia" type="text" autocomplete="off" required aria-describedby="f-dia-err">
+            <p class="field__error" id="f-dia-err" hidden>Escreva o dia e o período que preferir, como “sexta à tarde”.</p></div>
+          <div class="btn-row"><button class="btn btn--primary" type="submit">Agendar head spa</button></div>
+          <p class="form__status" role="status" data-form-status></p>
+          <p class="t-small muted">Prefere falar direto? <a class="link" href="https://wa.me/5516992072920">WhatsApp (16) 99207-2920</a></p>
+        </form>
+      </div>
+      <div class="book__photo span-6 start-7"><img src="assets/img/arco-vapor.jpg" srcset="assets/img/arco-vapor-600.jpg 600w, assets/img/arco-vapor.jpg 640w" sizes="(max-width: 1023px) 100vw, 640px" width="640" height="600" alt="Arco de água sobre os cabelos, com vapor subindo na sala de head spa" loading="lazy" data-source="client"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer closing footer--visit" id="contact" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta close--photo">
+      <div class="section-head--split">
+        <div><h2 id="close-h">Seu primeiro head spa em Guariba</h2><p class="t-lead">Uma pausa só sua, com hora marcada.</p></div>
+        <a class="btn btn--primary" href="#agendar">Agendar head spa<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+      </div>
+      <div class="close__media"><picture><source media="(max-width: 639px)" srcset="assets/img/entrada-45.jpg" width="640" height="800"><img src="assets/img/entrada.jpg" srcset="assets/img/entrada-600.jpg 600w, assets/img/entrada-900.jpg 900w, assets/img/entrada.jpg 1500w" sizes="(max-width: 639px) 100vw, 1280px" width="1500" height="840" alt="Entrada envidraçada com vaso de costela-de-adão, mesa de canto e luz do dia" loading="lazy" style="--pos: 50% 55%" data-source="client" data-subject="entrada do salão"></picture></div>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-6 stack-4">
+          <svg class="k-logo-v" viewBox="0 0 265 257" role="img" aria-label="KELLY Terapia Capilar &amp; Head Spa"><use href="#k-logo-v"/></svg>
+          <address class="footer__address">Guariba, SP</address>
+          <p>Atendimento com hora marcada. <a class="link" href="https://wa.me/5516992072920">WhatsApp (16) 99207-2920</a></p>
+        </div>
+        <div class="span-3 start-7 footer__col"><h3>Cuidado</h3><ul><li><a href="#ritual">Ritual</a></li><li><a href="#tratamentos">Tratamentos</a></li><li><a href="#lavatorio">Lavatório</a></li></ul></div>
+        <div class="span-3 start-10 footer__col"><h3>Visita</h3><ul><li><a href="#espaco">Espaço</a></li><li><a href="#duvidas">Dúvidas</a></li><li><a href="/vitrine/" target="_blank" rel="noopener">Loja de produtos</a></li></ul></div>
+      </div>
+      <div class="footer__legal">
+        <span>&copy; 2026 KELLY Terapia Capilar &amp; Head Spa &nbsp; <a href="privacidade.html">Privacidade</a></span>
+        <div class="socials"><a href="https://www.instagram.com/kellycabelos.terapiacapilar/" target="_blank" rel="noopener" aria-label="Instagram da KELLY"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a><a href="https://www.facebook.com/lojamariacabeluda" target="_blank" rel="noopener" aria-label="Facebook da KELLY"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a><a href="https://wa.me/5516992072920" target="_blank" rel="noopener" aria-label="WhatsApp da KELLY"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<nav class="actionbar" aria-label="Ação rápida">
+  <a class="btn btn--primary" href="#agendar">Agendar head spa</a>
+</nav>
+
+<script>
+document.querySelectorAll('form.form--wa').forEach(f => f.addEventListener('submit', () => {
+  const v = id => (document.getElementById(id).value || '').trim();
+  f.elements.text.value = 'Olá, KELLY! Quero agendar: ' + v('f-serv') + '.\nNome: ' + v('f-name') + '\nMelhor dia e período: ' + v('f-dia');
+}));
+</script>
+<script>
+(() => {
+  const v = document.querySelector('.hero__film'), b = document.querySelector('.hero__pause');
+  if (!v || !b) return;
+  const calm = matchMedia('(prefers-reduced-motion: reduce)').matches || (navigator.connection && navigator.connection.saveData);
+  if (calm) return;
+  const start = () => {
+    v.src = matchMedia('(max-width: 639px)').matches ? v.dataset.srcM : v.dataset.src;
+    v.addEventListener('playing', () => { v.classList.add('is-on'); b.hidden = false; }, { once: true });
+    v.addEventListener('error', () => v.remove(), { once: true });
+    const p = v.play(); if (p) p.catch(() => {});
+  };
+  b.addEventListener('click', () => {
+    if (v.paused) { const q = v.play(); if (q) q.catch(() => {}); b.setAttribute('aria-label', 'Pausar vídeo'); b.classList.remove('is-paused'); }
+    else { v.pause(); b.setAttribute('aria-label', 'Reproduzir vídeo'); b.classList.add('is-paused'); }
+  });
+  if (document.readyState === 'complete') start(); else addEventListener('load', start, { once: true });
+})();
+</script>
+<script>
+(() => {
+  const hero = document.querySelector('.hero--centre'), nav = document.querySelector('header.nav');
+  if (!hero || !nav) return;
+  const root = document.documentElement;
+  const set = () => root.classList.toggle('nav-over', hero.getBoundingClientRect().bottom > nav.offsetHeight + 1);
+  set(); addEventListener('scroll', set, { passive: true }); addEventListener('resize', set);
+})();
+</script>
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+</body>
+</html>
