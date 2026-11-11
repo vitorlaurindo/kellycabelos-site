@@ -78,15 +78,13 @@ figure.develop > img { display: block; width: 100%; height: 100%; object-fit: co
 .kelly__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
 @media (max-width: 1023px) { .kelly__photo { height: auto; aspect-ratio: 4 / 5; margin-top: var(--s-7); } }
 .kelly__label { margin: var(--s-8) 0 var(--s-5); color: var(--muted); font-family: var(--font-text); font-weight: 500; }
-.seals { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 124px); gap: var(--s-5); }
-.seal { width: 124px; height: 124px; color: #8a6c3c; transition: transform 200ms cubic-bezier(.23,1,.32,1); }
-.seal svg { display: block; width: 100%; height: 100%; overflow: visible; }
-.seal text { fill: currentColor; font-family: var(--font-text); font-weight: 500; letter-spacing: .14em; }
-.seal__name { font-size: 10px; letter-spacing: .1em; }
-.seal__foot { font-size: 6.4px; letter-spacing: .3em; }
-@media (hover: hover) and (pointer: fine) { .seal:hover { transform: translateY(-2px); } }
-@media (max-width: 1279px) { .seals { grid-template-columns: repeat(4, 96px); gap: var(--s-4); } .seal { width: 96px; height: 96px; } }
-@media (max-width: 639px) { .seals { grid-template-columns: repeat(2, 120px); gap: var(--s-4); } .seal { width: 120px; height: 120px; } }
+.seals { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s-4); }
+.seal { aspect-ratio: 7 / 5; display: grid; place-items: center; background: var(--p-bg); border: 1px solid color-mix(in oklab, var(--p-ink) 12%, transparent); border-radius: var(--r-md);
+  transition: transform 200ms cubic-bezier(.23,1,.32,1), border-color 200ms ease; }
+/* each logo's width is set from its shape and ink coverage, so round badges, wide lockups and the crest read at one weight */
+.seal img { display: block; width: var(--seal-w); height: auto; }
+@media (hover: hover) and (pointer: fine) { .seal:hover { transform: translateY(-2px); border-color: color-mix(in oklab, var(--p-ink) 24%, transparent); } }
+@media (max-width: 639px) { .seals { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-3); } }
 @media (prefers-reduced-motion: reduce) { .seal { transition: none; } }
 .book__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
 @media (max-width: 1023px) { .book__photo { height: auto; aspect-ratio: 4 / 3; margin-top: var(--s-7); } }
@@ -170,6 +168,7 @@ p, .faq__item p, .rows p { text-wrap: pretty; }
   main > #ritual[data-moment]:not(.is-live) { height: calc(2 * 100svh); }
   .develop { aspect-ratio: 2 / 1; }
   #duvidas { --h: 2; }
+  #kelly { --h: 2; }
   .faq__photo { aspect-ratio: 4 / 3; }
   .book__photo { aspect-ratio: 16 / 9; }
 }
@@ -371,12 +370,7 @@ p, .faq__item p, .rows p { text-wrap: pretty; }
           <p>À frente da KELLY, Kelly Jaquelinis conduz cada ritual de head spa com atenção ao couro cabeludo de cada cliente: escuta antes de tratar, escolhe o protocolo do dia e acompanha a evolução entre as sessões.</p>
         </div>
         <p class="t-label kelly__label">Formação e certificações</p>
-        <!-- ILUSTRATIVO: selos e nomes de exemplo; substituir pelos selos reais antes de publicar -->
-        <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
-          <path id="seal-arc" d="M 10,60 A 50,50 0 0 1 110,60"/>
-          <path id="seal-arc-b" d="M 14,60 A 46,46 0 0 0 106,60"/>
-        </defs></svg>
-        <ul class="seals"><li class="seal" data-illustrative role="img" aria-label="Selo de certificação: Terapia Capilar"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="57" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="60" cy="60" r="43" fill="none" stroke="currentColor" stroke-width=".8"/><text class="seal__name"><textPath href="#seal-arc" startOffset="50%" text-anchor="middle">TERAPIA CAPILAR</textPath></text><text class="seal__foot"><textPath href="#seal-arc-b" startOffset="50%" text-anchor="middle">CERTIFICAÇÃO</textPath></text><g transform="translate(50.6 36.4) scale(.36)" fill="currentColor"><use href="#k-strand-a" x="-106" y="-1"/><use href="#k-strand-b" x="-106" y="-1"/></g><circle cx="11" cy="60" r="1.6" fill="currentColor"/><circle cx="109" cy="60" r="1.6" fill="currentColor"/></svg></li><li class="seal" data-illustrative role="img" aria-label="Selo de certificação: Tricologia"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="57" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="60" cy="60" r="43" fill="none" stroke="currentColor" stroke-width=".8"/><text class="seal__name"><textPath href="#seal-arc" startOffset="50%" text-anchor="middle">TRICOLOGIA</textPath></text><text class="seal__foot"><textPath href="#seal-arc-b" startOffset="50%" text-anchor="middle">CERTIFICAÇÃO</textPath></text><g transform="translate(50.6 36.4) scale(.36)" fill="currentColor"><use href="#k-strand-a" x="-106" y="-1"/><use href="#k-strand-b" x="-106" y="-1"/></g><circle cx="11" cy="60" r="1.6" fill="currentColor"/><circle cx="109" cy="60" r="1.6" fill="currentColor"/></svg></li><li class="seal" data-illustrative role="img" aria-label="Selo de certificação: Head Spa Japonês"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="57" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="60" cy="60" r="43" fill="none" stroke="currentColor" stroke-width=".8"/><text class="seal__name"><textPath href="#seal-arc" startOffset="50%" text-anchor="middle">HEAD SPA JAPONÊS</textPath></text><text class="seal__foot"><textPath href="#seal-arc-b" startOffset="50%" text-anchor="middle">CERTIFICAÇÃO</textPath></text><g transform="translate(50.6 36.4) scale(.36)" fill="currentColor"><use href="#k-strand-a" x="-106" y="-1"/><use href="#k-strand-b" x="-106" y="-1"/></g><circle cx="11" cy="60" r="1.6" fill="currentColor"/><circle cx="109" cy="60" r="1.6" fill="currentColor"/></svg></li><li class="seal" data-illustrative role="img" aria-label="Selo de certificação: Cosmetologia"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="57" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="60" cy="60" r="43" fill="none" stroke="currentColor" stroke-width=".8"/><text class="seal__name"><textPath href="#seal-arc" startOffset="50%" text-anchor="middle">COSMETOLOGIA</textPath></text><text class="seal__foot"><textPath href="#seal-arc-b" startOffset="50%" text-anchor="middle">CERTIFICAÇÃO</textPath></text><g transform="translate(50.6 36.4) scale(.36)" fill="currentColor"><use href="#k-strand-a" x="-106" y="-1"/><use href="#k-strand-b" x="-106" y="-1"/></g><circle cx="11" cy="60" r="1.6" fill="currentColor"/><circle cx="109" cy="60" r="1.6" fill="currentColor"/></svg></li></ul>
+        <ul class="seals"><li class="seal"><img src="assets/img/selos/grandha.webp" width="208" height="209" alt="Selo Grandha Hair Therapy: espaço credenciado" loading="lazy" style="--seal-w: 51.5%"></li><li class="seal"><img src="assets/img/selos/iat.webp" width="208" height="208" alt="Selo International Association of Trichologists" loading="lazy" style="--seal-w: 51.6%"></li><li class="seal"><img src="assets/img/selos/abt.webp" width="336" height="147" alt="Selo ABT Official Member, certificado pela Academia Brasileira de Tricologia" loading="lazy" style="--seal-w: 83.3%"></li><li class="seal"><img src="assets/img/selos/terapia-capilar.webp" width="209" height="208" alt="Selo de certificação em Terapia Capilar" loading="lazy" style="--seal-w: 51.7%"></li><li class="seal"><img src="assets/img/selos/spa-hair-therapy.webp" width="336" height="116" alt="Selo Spa Hair Therapy" loading="lazy" style="--seal-w: 83.3%"></li><li class="seal"><img src="assets/img/selos/wts.webp" width="262" height="195" alt="Selo World Trichology Society" loading="lazy" style="--seal-w: 65.0%"></li></ul>
       </div>
       <div class="kelly__photo span-6 start-7"><img src="assets/img/kelly-jaquelinis.jpg" srcset="assets/img/kelly-jaquelinis-600.jpg 600w, assets/img/kelly-jaquelinis-900.jpg 900w, assets/img/kelly-jaquelinis.jpg 1100w" sizes="(max-width: 1023px) 100vw, 50vw" width="1100" height="1375" alt="Retrato de Kelly Jaquelinis, de blazer preto, com a mão no queixo" loading="lazy" data-source="client" data-subject="Kelly Jaquelinis"></div>
     </div>
